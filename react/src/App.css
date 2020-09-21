@@ -12,7 +12,13 @@
     animation: App-logo-spin infinite 20s linear;
   }
 }
-
+.inputs{
+  padding: 5px;;
+  margin: 5px;
+  display:block; 
+  border:black 2px solid;
+  background-color:blanchedalmond;
+}
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
@@ -36,3 +42,4 @@
     transform: rotate(360deg);
   }
 }
+.ui.form {display: inline-block;}

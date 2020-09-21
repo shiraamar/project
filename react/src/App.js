@@ -1,26 +1,38 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
-
+import React from 'react'
+import ReactDom from 'react-dom'
+import './App.css'
+import './index.css'
+import Login from './components/login';
+import Register from './components/register'
+import Main from './components/main';
+import {useState} from 'react';
+import { Form } from 'semantic-ui-react';
+import {BrowserRouter ,Route,Switch} from 'react-router-dom';
 function App() {
+
+  const [dishes, setDishes] = useState(['בקר', 'עוף', 'פרגית', 'שניצל', 'כבד']);
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+
+    
+    <div 
+     >
+
+{/* <h1 className="div1">logo</h1>
+<h2 className="div2">sign in</h2>
+ <h1 className="div3">sign up</h1> */}
+{/* <Register/> */}
+{/* <Main dishes={dishes}/> */}
+{/* <Login/> */}
+{/* <Login/> */}
+
+<Switch>
+<Route path="/login" component={Login}/>
+<Route path="/sign" component={Register}/>
+
+</Switch>
+</div>
   );
 }
+
 
 export default App;
