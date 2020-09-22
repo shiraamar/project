@@ -2,9 +2,11 @@
 import React from 'react'
 import { Button, Form, Grid, Header, Image, Message, Segment } from 'semantic-ui-react'
 import 'semantic-ui-css/semantic.min.css'
-
+import { Link } from 'react-router-dom';
+import sign from './register'
 
 const Login = () => (
+  
   <Grid className="formRe" textAlign='right'  style={{ height: '100vh' }} verticalAlign='middle'>
     <Grid.Column style={{ maxWidth: 450 }}>
       <Header as='h2' color='teal' textAlign='center'>
@@ -25,6 +27,8 @@ const Login = () => (
             Login
           </Button>
         </Segment>
+        <div></div>
+      <Link to='/sign'>  <button  id=" signup">signup</button> </Link>
       </Form>
       <Message>
         New to us? <a href='#'>Sign Up</a>

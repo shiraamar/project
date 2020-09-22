@@ -5,6 +5,7 @@ import './index.css'
 import Login from './components/login';
 import Register from './components/register'
 import Main from './components/main';
+import Error from './components/error';
 import {useState} from 'react';
 import { Form } from 'semantic-ui-react';
 import {BrowserRouter ,Route,Switch} from 'react-router-dom';
@@ -13,7 +14,7 @@ function App() {
   const [dishes, setDishes] = useState(['בקר', 'עוף', 'פרגית', 'שניצל', 'כבד']);
   return (
 
-    
+     
     <div 
      >
 
@@ -28,7 +29,7 @@ function App() {
 <Switch>
 <Route path="/login" component={Login}/>
 <Route path="/sign" component={Register}/>
-
+<Route component={Error}/>
 </Switch>
 </div>
   );
