@@ -2,7 +2,7 @@ import React from 'react'
 import { Button, Form } from 'semantic-ui-react'
 
 const Register = () => (
-  <Form>
+  <Form className={"center"}>
     <Form.Group unstackable widths={1}>
       <Form.Input className="inputs" label='First name' placeholder='First name' />
   

@@ -9,6 +9,7 @@ import Error from './components/error';
 import {useState} from 'react';
 import { Form } from 'semantic-ui-react';
 import {BrowserRouter ,Route,Switch} from 'react-router-dom';
+import HomePage from './components/homepage';
 function App() {
 
   const [dishes, setDishes] = useState(['בקר', 'עוף', 'פרגית', 'שניצל', 'כבד']);
@@ -29,7 +30,10 @@ function App() {
 <Switch>
 <Route path="/login" component={Login}/>
 <Route path="/sign" component={Register}/>
+
+<Route path="/" component={HomePage}/>
 <Route component={Error}/>
+
 </Switch>
 </div>
   );

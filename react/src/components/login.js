@@ -7,7 +7,7 @@ import sign from './register'
 
 const Login = () => (
   
-  <Grid className="formRe" textAlign='right'  style={{ height: '100vh' }} verticalAlign='middle'>
+  <Grid className="formRe center" textAlign='right'  style={{ height: '100vh' }} verticalAlign='middle'>
     <Grid.Column style={{ maxWidth: 450 }}>
       <Header as='h2' color='teal' textAlign='center'>
         <Image src='/logo.png' /> התחבר

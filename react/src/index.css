@@ -33,3 +33,8 @@ body{
 .ui.form .field .ui.input input{
   text-align: right;
 }
+.center{
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
