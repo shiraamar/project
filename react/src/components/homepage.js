@@ -9,8 +9,14 @@ const HomePage = () => { // שם
         <div>
 
      
-        <Link to='/login'>login</Link>
-        <Link to='/sign'>sign up</Link>
+        <Link to='/login' className="login" >התחבר</Link>
+        <Link to='/sign' className="sign in">הרשם</Link>
+<div class="div-header">
+
+<a ></a>
+
+</div>
+
         {/* <button class="ui button">sign in</button> */}
         </div>
     )
