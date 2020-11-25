@@ -23,7 +23,13 @@ import { useForm } from "react-hook-form";
 
     const handleSubmit = (evt) => {
       evt.preventDefault();
-      axios.post(`cust/register/ ${tz}/${firstName}/${lastName}/${tel}/${email}/${permissionCode}/${password}`).then(x=>{
+      axios.get(`cust/register/ ${tz}/${firstName}/${lastName}/${tel}/${email}/${permissionCode}/${password}`,  {
+        headers: {
+          'Content-Type': null
+        }
+      }
+
+      ).then(x=>{
       console.log(x.data);
       })
       alert(`Submitting Name ${firstName}`);

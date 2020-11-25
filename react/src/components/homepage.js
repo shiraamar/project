@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom'
 
 const HomePage = () => { // שם
 
+
     // משתנים ופונקציות
 
     return (
@@ -11,6 +12,7 @@ const HomePage = () => { // שם
      
         <Link to='/login' className="login" >התחבר</Link>
         <Link to='/sign' className="sign in">הרשם</Link>
+        
 <div class="div-header">
 
 <a ></a>
