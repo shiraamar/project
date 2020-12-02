@@ -2,14 +2,15 @@ import React from 'react'
 import ReactDom from 'react-dom'
 import './App.css'
 import './index.css'
-import Login from './components/login';
-import Register from './components/register'
-import Main from './components/main';
-import Error from './components/error';
+import Login from './components/login/login';
+import Register from './components/register/register'
+import Main from './components/main/main';
+import Error from './components/error/error';
 import {useState} from 'react';
 import { Form } from 'semantic-ui-react';
 import {BrowserRouter ,Route,Switch} from 'react-router-dom';
-import HomePage from './components/homepage';
+import HomePage from './components/homepage/homepage';
+import Header from './components/header/header';
 function App() {
 
   const [dishes, setDishes] = useState(['בקר', 'עוף', 'פרגית', 'שניצל', 'כבד']);
@@ -26,12 +27,13 @@ function App() {
 {/* <Main dishes={dishes}/> */}
 {/* <Login/> */}
 {/* <Login/> */}
-
+<Header></Header>
 <Switch>
 <Route path="/login" component={Login}/>
 <Route path="/sign" component={Register}/>
 
-<Route path="/" component={HomePage}/>
+<Route path="/homepage" component={HomePage}/>
+{/* <Route path="/" component={MySidebar}/> */}
 <Route component={Error}/>
 
 </Switch>
