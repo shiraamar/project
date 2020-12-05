@@ -1,6 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import  Header  from '../header/header.js'
+import Home from '../../assets/shutterstock_231955507.jpg'
 
 const HomePage = () => 
  // שם
@@ -11,7 +12,8 @@ const HomePage = () =>
     return (
         <div>
             
-     
+            <img src={Home} style={{ width: "100vw", height: "150vh" }}></img>‏
+
         {/* <Link to='/login' className="login" >התחבר</Link>
         <Link to='/sign' className="sign in">הרשם</Link> */}
         
