@@ -11,6 +11,9 @@ import { Form } from 'semantic-ui-react';
 import {BrowserRouter ,Route,Switch} from 'react-router-dom';
 import HomePage from './components/homepage/homepage';
 import Header from './components/header/header';
+import Slider from './components/slider/slider';
+import About from './components/about/about';
+
 function App() {
 
   const [dishes, setDishes] = useState(['בקר', 'עוף', 'פרגית', 'שניצל', 'כבד']);
@@ -28,10 +31,11 @@ function App() {
 {/* <Login/> */}
 {/* <Login/> */}
 <Header></Header>
+
 <Switch>
 <Route path="/login" component={Login}/>
 <Route path="/sign" component={Register}/>
-
+<Route path="/about" component={About}/>
 <Route path="/homepage" component={HomePage}/>
 {/* <Route path="/" component={MySidebar}/> */}
 <Route component={Error}/>
