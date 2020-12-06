@@ -38,7 +38,7 @@ function App() {
 <Route path="/about" component={About}/>
 <Route path="/homepage" component={HomePage}/>
 {/* <Route path="/" component={MySidebar}/> */}
-<Route component={Error}/>
+<Route component={HomePage}/>
 
 </Switch>
 </div>
