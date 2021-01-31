@@ -25,7 +25,7 @@ class Header extends Component {
                     <NavLink to={"/about"}>אודות</NavLink>
                 </Menu.Item>
                 <Menu.Item>
-                    <NavLink to={"/sign"}>תפריט אונליין</NavLink>
+                    <NavLink to={"/main"}>תפריט אונליין</NavLink>
                 </Menu.Item>
 
                  <Menu.Item>

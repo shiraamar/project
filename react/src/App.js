@@ -37,6 +37,7 @@ function App() {
 <Route path="/sign" component={Register}/>
 <Route path="/about" component={About}/>
 <Route path="/homepage" component={HomePage}/>
+<Route path="/main" component={Main}/>
 {/* <Route path="/" component={MySidebar}/> */}
 <Route component={HomePage}/>
 
