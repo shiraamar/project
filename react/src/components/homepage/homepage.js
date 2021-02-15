@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import  Header  from '../header/header.js'
-import Home from '../../assets/shutterstock_231955507.jpg'
+import Home from '../../assets/shutterstock_73307464.jpg'
 
 const HomePage = () => 
  // שם

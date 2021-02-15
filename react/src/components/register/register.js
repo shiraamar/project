@@ -19,18 +19,32 @@ import '../CSS/Register.css'
     const [lastName, setLastName] = useState("");
     const [tel, setTel] = useState("");
     const [email, setEmail] = useState("");
-    const [permissionCode, setPermissionCode] = useState("");
-    const [password, setPassword] = useState("");
+    const [permissionCode, setPermissionCode] = useState("1234");
+    const [password, setPassword] = useState("1234");
 
     const handleSubmit = (evt) => {
       evt.preventDefault();
       // axios.get(`cust/register/ ${tz}/${firstName}/${lastName}/${tel}/${email}/${permissionCode}/${password}`,  {
       //   headers: {
-      //     'Content-Type': null
+      //     'Content-Type': null,
+
       //   }
       // }
-      axios.get(`cust/register/ ${tz}/${firstName}/${lastName}/${tel}/${email}/${permissionCode}/${password}`).then(res=>{console.log(res)}).catch(err=>{console.log("error ")})
-   
+      const user={
+        tz:tz,
+        firstName:firstName,
+        lastName:lastName,
+        tel:tel,
+        email:email,
+        permissionCode:permissionCode,
+        password:password
+
+      }
+      debugger
+      // axios.post(`user/register', user).then(res=>{console.log(res)}).catch(err=>{console.log("error ")})
+      axios.post('user/register',user).then(x=>{
+       console.log(x);
+       }).catch(e=>console.log(e));
   }
 
     return(

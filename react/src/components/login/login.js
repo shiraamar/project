@@ -101,7 +101,7 @@ const Login = ()=> {
           <LockOutlinedIcon />
         </Avatar>
         <Typography component="h1" variant="h5">
-          Sign in
+          התחבר
         </Typography>
         <form className={classes.form} noValidate>
           <TextField
@@ -110,7 +110,7 @@ const Login = ()=> {
             required
             fullWidth
             id="email"
-            label="Email Address"
+            label="כתובת מייל"
             name="email"
             autoComplete="email"
             autoFocus
@@ -121,14 +121,14 @@ const Login = ()=> {
             required
             fullWidth
             name="password"
-            label="Password"
+            label="סיסמה"
             type="password"
             id="password"
             autoComplete="current-password"
           />
           <FormControlLabel
             control={<Checkbox value="remember" color="primary" />}
-            label="Remember me"
+            label="זכור אותי"
           />
           <Button
             type="submit"
